@@ -1,0 +1,75 @@
+{
+  "spellCheckerSettings": {
+    "includeRegExpList": ["\\.jsx?$"],
+    "ignoreRegExpList": ["(?:<Text[^>]*>)([\\w\\s]*)(?:<\\/Text>)"]
+  },
+  "spellChecker.ignorePath": [
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/build/**",
+    "**/dist/**"
+  ],
+  "prettier-eslint.eslintIntegration": true,
+  "editor.formatOnSave": true,
+  "eslint.alwaysShowStatus": true,
+  "files.autoSave": "onFocusChange",
+  "workbench.colorTheme": "Ayu Mirage",
+  //"prettier.eslintIntegration": true,
+  // Support using flow through your node_modules folder, WARNING: Checking this box is a security risk. When you open a project we will immediately run code contained within it.
+  "flow.useNPMPackagedFlow": true,
+  "git.autofetch": true,
+  "terminal.integrated.rendererType": "dom",
+  "workbench.iconTheme": "material-icon-theme",
+  "sync.gist": "06de48548a421660a4a1fd96b69535fc",
+  "zeplin.preferredApplicationType": "App",
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontFamily": "Cascadia Code",
+  "editor.fontSize": 14.5,
+  "stories.username": "Chewbacca_vole",
+  "editor.renderControlCharacters": false,
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "gitlens.views.branches.branches.layout": "list",
+  "yaml.schemas": {
+    "file:///Users/arwa/.vscode/extensions/atlassian.atlascode-2.10.12/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "window.zoomLevel": 1,
+  "redhat.telemetry.enabled": true,
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1",
+    "CW_NEW_SESSION": "1"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "atlascode.jira.jqlList": [
+    {
+      "id": "8fd148e7-9315-4a8e-8fcf-b922c9c3e8b4",
+      "enabled": true,
+      "name": "My blockgem Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "3d455c1d-7b50-49ae-bfed-ba63d4b43292",
+      "monitor": true
+    }
+  ],
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.accessibilitySupport": "off",
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "push:command"
+  ],
+  "workbench.startupEditor": "none",
+  "editor.inlineSuggest.enabled": true,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
