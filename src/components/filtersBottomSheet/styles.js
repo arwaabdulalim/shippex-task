@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     marginVertical: calcHeight(12),
   },
   container: {
-    paddingHorizontal: calcWidth(24), // check  This
+    paddingLeft: calcWidth(20),
   },
   cancelDoneBtn: {
     color: colors.primary,

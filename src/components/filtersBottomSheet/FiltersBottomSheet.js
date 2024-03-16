@@ -80,20 +80,22 @@ const FiltersBottomSheet = forwardRef((props, ref) => {
           </TouchableOpacity>
         </View>
         <View style={styles.separator} />
-        <Text style={styles.statusTxt}>SHIPMENT STATUS</Text>
-        <FlatList
-          data={filterItems}
-          numColumns={3}
-          keyExtractor={item => item.id}
-          renderItem={({ item }) => (
-            <FilterItem
-              filter={item.label}
-              isSelected={selectedFilters.includes(item.id)}
-              onToggle={() => toggleFilter(item.id)}
-            />
-          )}
-          contentContainerStyle={styles.filtersWrapper}
-        />
+        <View style={styles.container}>
+          <Text style={styles.statusTxt}>SHIPMENT STATUS</Text>
+          <FlatList
+            data={filterItems}
+            numColumns={3}
+            keyExtractor={item => item.id}
+            renderItem={({ item }) => (
+              <FilterItem
+                filter={item.label}
+                isSelected={selectedFilters.includes(item.id)}
+                onToggle={() => toggleFilter(item.id)}
+              />
+            )}
+            contentContainerStyle={styles.filtersWrapper}
+          />
+        </View>
       </BottomSheetModal>
     </View>
   );
